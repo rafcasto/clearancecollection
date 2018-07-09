@@ -1,0 +1,101 @@
+
+.App {
+  text-align: center;
+}
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-image: url('img/banner.jpg');
+  background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+  height: 150px;
+  padding: 20px;
+  color: white;
+
+}
+
+
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+.store {
+  text-align: left;
+  
+  padding-top: 50px;
+}
+
+.store .prod {
+  position: relative;
+  display: inline-block;
+  max-width: 30%;
+  width: 100%;
+  margin: 1%;
+  padding: 15px;
+  box-sizing: border-box;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .store .prod {
+      max-width: 100%;
+  }
+}
+
+h1, h2, p, ul, li {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+a {
+color: #000000;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+header {
+  position: relative;
+}
+
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
