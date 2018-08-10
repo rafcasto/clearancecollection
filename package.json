@@ -1,6 +1,7 @@
 {
   "name": "clothingwebsite",
   "version": "0.1.0",
+  "homepage": "http://soen.clearancecollection.com/",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.1",

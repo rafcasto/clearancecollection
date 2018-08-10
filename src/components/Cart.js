@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ShoppingCart from 'react-icons/lib/ti/shopping-cart';
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink,Badge } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import CartItem from './CartItem'
 class Cart extends Component {
@@ -32,7 +32,10 @@ class Cart extends Component {
         <DropdownItem></DropdownItem>
           <Dropdown  nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
             <DropdownToggle nav caret>
-            <ShoppingCart size={30} color="purple" /> ({totalItems}) 
+            <div className="circle-badge" >
+            <ShoppingCart  size={30} color="purple" /> ({totalItems}) 
+          </div>
+            
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem header><CartItem cart={this.props.cart} /> </DropdownItem>

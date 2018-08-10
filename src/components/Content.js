@@ -5,6 +5,7 @@ import ProductList from './ProductList'
 class Content extends Component {
 
     render() {
+        
         return (
             <div>
                 <br />
